@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suneetha's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+        }
+        header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            animation: fadeIn 2s;
+        }
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+            animation: bounceIn 2s;
+        }
+        h1, h2 {
+            margin: 20px 0;
+        }
+        .project, .review {
+            margin: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .project:hover, .review:hover {
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Suneetha's Portfolio</h1>
+        <p>Cloud & DevOps Engineer | GCP | AWS | Kubernetes | Terraform</p>
+    </header>
+    
+    <img src="https://mytfprojectsuneetha2025.s3.ap-south-1.amazonaws.com/profile.png" alt="Suneetha's Profile Picture" class="profile">
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Automated CI/CD Pipeline</h3>
+            <p>Designed and implemented a CI/CD pipeline using Jenkins, Docker, and Kubernetes.</p>
+        </div>
+        <div class="project">
+            <h3>GCP Infrastructure Automation</h3>
+            <p>Automated infrastructure provisioning using Terraform and Google Cloud.</p>
+        </div>
+    </section>
+    
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p>"Suneetha is an exceptional DevOps Engineer with strong problem-solving skills!" - Team Lead</p>
+        </div>
+        <div class="review">
+            <p>"Her expertise in GCP and Kubernetes helped streamline our deployment process." - Colleague</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Connect with me on LinkedIn | GitHub | Email</p>
+    </footer>
+</body>
+</html>
